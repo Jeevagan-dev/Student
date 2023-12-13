@@ -1,0 +1,32 @@
+@media only screen and (max-width:992px) {
+    .container{
+       
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        padding:0 5%;
+       
+    }
+   
+    .image1{
+        width: 100%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    ul {
+        position: absolute;
+        background-color: aquamarine;
+        width: 100%;
+        height: auto;
+        top:10%;
+        display: none;
+        left:0%;
+        z-index: 99;
+    }
+    ul li {
+        display: block;
+        margin: 5% 0;
+    }
+}

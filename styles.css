@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    /* overflow: hidden; */
+}
+nav{
+    
+    margin: auto;
+    
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo img{
+    width: 200px;
+    padding: 10px 0;
+
+}
+ul{
+    position: relative;
+}
+ul li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    padding: 10px 10px;
+}
+ul li a {
+    text-decoration: none;
+    color: #233845;
+    font-size: 1.2rem;
+    font-weight: 400;
+    /* margin-right: 10px; */
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background-color:#fff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+b{
+    font-size: 12px;
+}
+
+li a button {
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: #233845;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    
+}
+.menus{
+    background-color: #7f00ff;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    margin: 3px;
+}
+.container{
+    width: 100%;
+    padding: 0 8%;
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    width: 40%;
+    position: relative;
+    z-index: 2;
+}
+.content h1 {
+    
+    color: #7e33d4;
+    font-size: 2.3rem;
+    font-weight: 700;
+    
+}
+.content p {
+    text-align: justify;
+    color: #233845;
+    font-size: 1.2rem;
+    font-weight: 500;
+   
+}
+.image1{
+    width: 50%;
+}
+
+.show{
+    display: block;
+}
+.image1 img{
+    
+    width: calc(80%);
+    animation: object1 2s infinite alternate;
+    filter:drop-shadow( rgb(255, 214, 214) 0px 16px);
+}
+
+@keyframes object1 {
+       
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-30px); }
+       
+    }
+
+a button {
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: #233845;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin: 20px 0;
+    
+}
+.content::before{
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(45deg,#7f00ff, pink);
+    top: 40%;
+    left: -30%;
+    z-index: -2;
+    opacity:0.3;
+    animation: objects 3s infinite ease-in;
+}
+
+@keyframes objects {
+    50%{
+        transform: translateX(10%);
+    }
+}
